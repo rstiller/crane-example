@@ -1,0 +1,17 @@
+name: mongodb
+description: MongoDB Server
+version: 1.0.0
+category: database
+
+base: debian
+provision:
+    provider: puppet
+    manifest: mongodb/default.pp
+    modulePaths:
+        - puppet
+
+ports:
+    - 27017
+
+options:
+    memory: 2g
