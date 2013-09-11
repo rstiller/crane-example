@@ -3,9 +3,9 @@ services:
         nodes: auto
         minNodes: 3
         maxNodes: 9
-        manifest: example/mongodb.yml
+        manifest: mongodb.yml
     haproxy:
-        manifest: example/haproxy.yml
+        manifest: haproxy.yml
     my_servcie:
         nodes: auto
 
