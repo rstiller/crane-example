@@ -1,0 +1,17 @@
+name: haproxy
+description: High Availability Server
+version: 1.0.0
+category: webserver
+
+base: debian
+provision:
+    provider: puppet
+    manifest: haproxy/default.pp
+    modulePaths:
+        - puppet
+
+ports:
+    - 8080
+
+options:
+    memory: 512m
