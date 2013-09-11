@@ -1,0 +1,17 @@
+name: my_service
+description: My Application
+version: 1.0.0
+category: custom
+
+base: debian
+provision:
+    provider: puppet
+    manifest: my_service/default.pp
+    modulePaths:
+        - puppet
+
+ports:
+    - 8080
+
+options:
+    memory: 512m
