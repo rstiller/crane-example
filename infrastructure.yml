@@ -6,7 +6,7 @@ services:
         manifest: mongodb.yml
     haproxy:
         manifest: haproxy.yml
-    my_servcie:
+    my_service:
         nodes: auto
 
 environments:
