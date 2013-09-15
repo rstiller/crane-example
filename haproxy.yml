@@ -3,7 +3,7 @@ description: High Availability Server
 version: 1.0.0
 category: webserver
 
-base: debian
+base: base:ubuntu-12.10
 provision:
     provider: puppet
     manifest: haproxy/default.pp
