@@ -3,7 +3,7 @@ description: My Application
 version: 1.0.0
 category: custom
 
-base: debian
+base: tianon/debian:wheezy
 provision:
     provider: puppet
     manifest: my_service/default.pp
