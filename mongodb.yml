@@ -3,7 +3,7 @@ description: MongoDB Server
 version: 1.0.0
 category: database
 
-base: debian
+base: base
 provision:
     provider: puppet
     manifest: mongodb/default.pp
