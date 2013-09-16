@@ -1,22 +1,9 @@
 services:
-    mongodb:
-        nodes: auto
-        minNodes: 3
-        maxNodes: 9
-        manifest: mongodb.yml
-    haproxy:
-        manifest: haproxy.yml
     my_service:
         nodes: auto
 
 environments:
-    staging:
-        env_var1: xyz1
     test:
-        env_var1: xyz2
-    development:
-        env_var1: xyz3
+        env_var1: xyz1
     production:
-        env_var1: xyz
-    production_mirrowed:
-        env_var1: xyz
+        env_var1: xyz2
