@@ -1,14 +1,22 @@
 name: my_service
 description: My Application
-version: 1.0.0
+version: 2.0.0
 category: custom
 
-base: tianon/debian:wheezy
+base: busybox
 provision:
-    provider: puppet
-    manifest: my_service/default.pp
-    modulePaths:
-        - puppet
+    provider: shell
+    directories:
+        scripts: /_provisioning/scripts
+    path:
+        - /bin
+        - /usr/bin
+        - /usr/share
+    commands:
+        - apt-get update
+        - apt-get install -y --force-yes ruby1.9.1
+        - gem install sinatra sequel
+        - /_provisioning/scripts/touch
 
 ports:
     - 12345
