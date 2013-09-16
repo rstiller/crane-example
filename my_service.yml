@@ -3,7 +3,7 @@ description: My Application
 version: 2.0.0
 category: custom
 
-base: busybox
+base: base
 provision:
     provider: shell
     directories:
