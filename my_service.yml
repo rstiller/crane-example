@@ -1,6 +1,6 @@
 name: my_service
 description: My Application
-version: 2.0.0
+version: 2.1.0
 category: custom
 
 base: base
@@ -12,10 +12,12 @@ provision:
         - /bin
         - /usr/bin
         - /usr/share
+        - /usr/local/bin
     commands:
         - apt-get update
         - apt-get install -y --force-yes ruby1.9.1
-        - gem install sinatra sequel
+        - gem bundler
+        - bundle install sinatra sequel
         - /_provisioning/scripts/touch
 
 ports:
