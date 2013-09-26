@@ -16,7 +16,6 @@ provision:
     commands:
         - apt-get update
         - apt-get install -y --force-yes ruby1.9.1
-        - /_provisioning/scripts/touch
 
 ports:
     - 12345
