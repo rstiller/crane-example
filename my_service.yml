@@ -16,8 +16,6 @@ provision:
     commands:
         - apt-get update
         - apt-get install -y --force-yes ruby1.9.1
-        - gem bundler
-        - bundle install sinatra sequel
         - /_provisioning/scripts/touch
 
 ports:
