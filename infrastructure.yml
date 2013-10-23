@@ -1,9 +1,15 @@
 services:
     my_service:
         nodes: auto
+    mongodb:
+        nodes: 3
 
 environments:
     test:
         env_var1: xyz1
+    staging:
+        env_var1: xyz3
     production:
         env_var1: xyz2
+    development:
+        env_var1: xyz4
