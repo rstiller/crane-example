@@ -1,0 +1,22 @@
+name: mongodb
+description: mongodb
+version: 1.0.0
+category: database
+
+base: base
+provision:
+    provider: shell
+    path:
+        - /bin
+        - /usr/bin
+        - /usr/share
+        - /usr/local/bin
+    commands:
+        - apt-get update
+        - apt-get install -y --force-yes mongodb
+
+ports:
+    - 27017
+
+options:
+    memory: 1g
